@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ -f "playwright.config.js" ]]; then
-    echo "Playwright"
-    exit 0
-else
-    exit 1
+if [[ -f "requirements.txt" ]]; then
+    grep -qE "^playwright==" requirements.txt && echo "Playwright" && exit 0
 fi
+
+exit 1

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "-----> Installing Playwright"
-npm install -g playwright
-echo "export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1" >> $env_export_path
+echo "-----> Installing Playwright and Chromium"
+pip install playwright==1.32.1
+playwright install
