@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "-----> Installing Playwright"
+npm install -g playwright
+echo "export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1" >> $env_export_path
